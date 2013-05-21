@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/settings.css" />
+		<script src="scripts/settings.js"></script>
+	</head>
+	<body>
+		<h3>Indent</h3>
+		<div class="switch-3-buttons">
+			<input type="radio" name="indent" id="indent-tab" value="	" / ><label for="indent-tab">Tab</label>
+			<input type="radio" name="indent" id="indent-4spaces" value="    " / ><label for="indent-4spaces">4 spaces</label>
+			<input type="radio" name="indent" id="indent-2spaces" value="  " / ><label for="indent-2spaces">2 spaces</label>
+		</div>
+
+		<h3>Mode</h3>
+		<div class="switch-2-buttons">
+			<input type="radio" name="mode" id="mode-simple" value="simple" /><label for="mode-simple">Simple</label>
+			<input type="radio" name="mode" id="mode-advanced" value="advanced" /><label for="mode-advanced">Advanced</label>
+		</div>
+
+		<h3>Advanced Mode Styling</h3>
+		<h4>Primary</h4>
+		<input type="color" name="primary-style-color" />
+		<div>
+			<input type="checkbox" name="primary-style-bold" id="primary-style-bold" / ><label for="primary-style-bold"><b>B</b></label>
+			<input type="checkbox" name="primary-style-italic" id="primary-style-italic" / ><label for="primary-style-italic"><i>I</i></label>
+			<input type="checkbox" name="primary-style-underline" id="primary-style-underline" / ><label for="primary-style-underline"><u>U</u></label>
+		</div>
+
+		<h4>Names</h4>
+		<input type="color" name="name-style-color" />
+		<div>
+			<input type="checkbox" name="name-style-bold" id="name-style-bold" / ><label for="name-style-bold"><b>B</b></label>
+			<input type="checkbox" name="name-style-italic" id="name-style-italic" / ><label for="name-style-italic"><i>I</i></label>
+			<input type="checkbox" name="name-style-underline" id="name-style-underline" / ><label for="name-style-underline"><u>U</u></label>
+		</div>
+
+		<h4>Strings</h4>
+		<input type="color" name="string-style-color" />
+		<div>
+			<input type="checkbox" name="string-style-bold" id="string-style-bold" / ><label for="string-style-bold"><b>B</b></label>
+			<input type="checkbox" name="string-style-italic" id="string-style-italic" / ><label for="string-style-italic"><i>I</i></label>
+			<input type="checkbox" name="string-style-underline" id="string-style-underline" / ><label for="string-style-underline"><u>U</u></label>
+		</div>
+
+		<h4>Numbers</h4>
+		<input type="color" name="number-style-color" />
+		<div>
+			<input type="checkbox" name="number-style-bold" id="number-style-bold" / ><label for="number-style-bold"><b>B</b></label>
+			<input type="checkbox" name="number-style-italic" id="number-style-italic" / ><label for="number-style-italic"><i>I</i></label>
+			<input type="checkbox" name="number-style-underline" id="number-style-underline" / ><label for="number-style-underline"><u>U</u></label>
+		</div>
+
+		<h4>Boolean</h4>
+		<input type="color" name="boolean-style-color" />
+		<div>
+			<input type="checkbox" name="boolean-style-bold" id="boolean-style-bold" / ><label for="boolean-style-bold"><b>B</b></label>
+			<input type="checkbox" name="boolean-style-italic" id="boolean-style-italic" / ><label for="boolean-style-italic"><i>I</i></label>
+			<input type="checkbox" name="boolean-style-underline" id="boolean-style-underline" / ><label for="boolean-style-underline"><u>U</u></label>
+		</div>
+
+		<h4>Null</h4>
+		<input type="color" name="null-style-color" />
+		<div>
+			<input type="checkbox" name="null-style-bold" id="null-style-bold" / ><label for="null-style-bold"><b>B</b></label>
+			<input type="checkbox" name="null-style-italic" id="null-style-italic" / ><label for="null-style-italic"><i>I</i></label>
+			<input type="checkbox" name="null-style-underline" id="null-style-underline" / ><label for="null-style-underline"><u>U</u></label>
+		</div>
+
+		<h3>Reset</h3>
+		<button type="button" id="reset-button">Reset settings</button>
+	</body>
+</html>

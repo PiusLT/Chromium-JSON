@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "JSON",
+	"description": "JSON formater.",
+	"version": "0.1.0",
+	"permissions": [
+		"background",
+		"storage",
+		"tabs",
+		"webRequest",
+		"<all_urls>"
+	],
+	"background": {
+		"scripts": [ "scripts/background.js" ]
+	},
+	"content_scripts" : [ {
+			"matches": [ "<all_urls>" ],
+			"js": [ "scripts/content.js" ]
+		}
+	],
+	"app": {
+		"launch": {
+			"local_path": "window.html"
+		}
+	},
+	"icons": {
+		"16": "images/icon_16x16.png",
+		"48": "images/icon_48x48.png",
+		"128": "images/icon_128x128.png",
+		"512": "images/icon_512x512.png"
+	},
+	"offline_enabled": true
+}

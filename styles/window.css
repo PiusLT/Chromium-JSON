@@ -1,0 +1,102 @@
+body, html {
+	height: 100%;
+	margin: 0px;
+	color: #333333;
+}
+
+body {
+	min-width: 400px;
+	min-height: 300px;
+	overflow: hidden;
+}
+
+body, button, textarea {
+	font-family: monospace;
+}
+
+#menu {
+	position: absolute;
+	background: #444;
+	color: white;
+	border-radius: 5px 0px 0px 5px;
+
+	width: 4em;
+	height: -webkit-calc((4em + 1px) * 3 - 1px);
+	
+
+	/*vertical-align: middle;*/
+	top: -webkit-calc((100% - 12em) / 2); /* (screen_height - element_height) / 2 */
+	left: -webkit-calc(100% - 0.4em); /* screen_width - visible_width */
+
+	-webkit-transition: left 0.3s;
+
+	z-index: 10;
+}
+
+#menu:hover, #menu.open {
+	left: -webkit-calc(100% - 4em); /* screen_width - element_width */
+}
+
+#menu > .divider {
+	background: white;
+	width: 100%;
+	height: 1px;
+}
+
+#menu > img {
+	display: block;
+	width: 4em;
+	height: 4em;
+	cursor: pointer;
+}
+
+#menu > img.hidden {
+	display: none;
+}
+
+#text-input {
+	width: -webkit-calc(100% - 6px);
+	height: -webkit-calc(100% - 6px);
+	border: 1px solid black;
+}
+
+#output-box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	top: 100%;
+
+	-webkit-transition: top 0.3s;
+
+	z-index: 5;
+
+	background: #ccc;
+}
+
+#output-box.open, #help-box {
+	top: 0px;
+}
+
+#output-box > .body, #help-box > .body {
+	margin: 1em;
+	width: -webkit-calc(100% - 2em);
+	height: -webkit-calc(100% - 2em);
+}
+
+#output-box > .body > * {
+	outline: 2px;
+	border: 1px solid black;
+	background: white;
+	width: -webkit-calc(100% - 6px);
+	height: -webkit-calc(100% - 6px);
+	overflow: auto;
+}
+
+#output-box > .body > *.hidden {
+	display: none;
+}
+
+#html-output > pre {
+	margin: 0px;
+}

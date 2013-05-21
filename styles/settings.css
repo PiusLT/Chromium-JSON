@@ -1,0 +1,11 @@
+html {
+	background: white;
+	color: black;
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+body {
+	min-width: 400px;
+	margin-left: 20%;
+}
+
